@@ -4,6 +4,33 @@ import FirstBlog from '@/assets/blog-1.png'
 import SecondBlog from '@/assets/blog-2.png'
 import ThirdBlog from '@/assets/blog-3.png'
 import tick from '@/assets/tick.png'
+
+const Posts = [
+  {
+    title: "Symptoms and types of bladder weakness",
+    author: "Clemens",
+    date: "March 15, 2022",
+    image: "/blog-1.png",
+    description:
+      "Bladder weakness is a common problem. It occurs more often as people get older and...",
+  },
+  {
+    title: "Embracing life’s changes with our solutions.",
+    author: "Clemens",
+    date: "February 20, 2022",
+    image: "/blog-2.png",
+    description:
+      "Living with incontinence can be challenging, but it doesn't mean giving up on...",
+  },
+  {
+    title: "Causes and risk factors for bladder weakness",
+    author: "Clemens",
+    date: "January 10, 2022",
+    image: "/blog-3.png",
+    description:
+      "Bladder weakness can be caused by everyday habits, underlying medical conditions or physical problems...",
+  }
+]
 function Articles() {
   return (
     <div className='flex space-x-3  overflow-scroll md:pl-5 scrollbar-hide'>
