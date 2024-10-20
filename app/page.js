@@ -12,10 +12,6 @@ import Doctor from "@/components/Doctor";
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Clemens | Incontinece products and solutions</title>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </Head>
       <main className="max-w-7xl mx-auto px-8 sm:px-16 md:px-0">
         <section className="pt-[7%]">
           <div>
