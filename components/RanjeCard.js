@@ -19,7 +19,7 @@ const ranges = [
 
 function RanjeCard() {
   return (
-    <div className='flex space-x-6 overflow-x-auto md:pl-5 scrollbar-hide py-4'>
+    <div className='flex space-x-2 overflow-x-auto md:pl-5 scrollbar-hide py-4'>
       {ranges.map((range, index) => (
         <div key={index} className='cursor-pointer hover:scale-105 transition transform duration-300 ease-out flex-shrink-0 w-[300px]'>
         <div className='relative h-[310px] w-[full] mb-4'>

@@ -28,6 +28,16 @@ export default defineType({
         hotspot: true,
       },
     }),
+
+    defineField({
+      name: 'ratingImage',
+      title: 'Rating image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+
     defineField({
       name: 'categories',
       title: 'Categories',

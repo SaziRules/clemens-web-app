@@ -7,13 +7,12 @@ import Articles from "@/components/Articles";
 import BlogHeading from '@/assets/blog-heading.png'
 import Promo from "@/components/Promo";
 import Doctor from "@/components/Doctor";
-import DoctorMobile from "@/components/DoctorMobile";
 
 
 export default function Home() {
   return (
     <div>
-      <main className="max-w-7xl mx-auto px-8 sm:px-16 md:px-0">
+      <main className="max-w-7xl mx-[auto] px-8 sm:px-16 md:px-0">
         <section className="pt-[7%]">
           <div>
             <RanjeCard />
