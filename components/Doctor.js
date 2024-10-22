@@ -21,6 +21,7 @@ function Doctor() {
         hover:scale-105 transform transition duration-300 ease-out'>Learn More</p>
       </div>
     </div>
+    
   )
 }
 
