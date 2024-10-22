@@ -13,7 +13,7 @@ const ranges = [
   { src: extras, title: 'Accessories', description: 'The latest absorbency technology to keep you dry, day and night.' },
   { src: buy, title: 'Where to buy', description: 'You can find Clemens™ products in-store at popular select retail stores.' },
   { src: tips, title: 'Health Tips', description: 'practical advice, support, and resources to manage incontinence.' },
-  { src: pro, title: 'Knowlwdge Hub', description: 'Connect with others who understand and share your experiences.' },
+  { src: pro, title: 'Knowledge Hub', description: 'Connect with others who understand and share your experiences.' },
 ]
 
 
