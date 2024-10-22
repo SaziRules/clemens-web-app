@@ -7,6 +7,7 @@ import Articles from "@/components/Articles";
 import BlogHeading from '@/assets/blog-heading.png'
 import Promo from "@/components/Promo";
 import Doctor from "@/components/Doctor";
+import DoctorMobile from "@/components/DoctorMobile";
 
 
 export default function Home() {
