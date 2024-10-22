@@ -29,7 +29,7 @@ function Header() {
         <Image src={logo}
         width={130}
         height={150}
-        objectPosition='left' />
+        style={{ objectPosition: 'left' }} />
       </Link>
 
       {/* Middle */}
@@ -40,7 +40,7 @@ function Header() {
             key={link.name}
             href={link.href}
             className='hover:bg-gray-100 transition duration-300 ease-out rounded-full p-3
-             active:bg-[#237DC0] active:text-white text-gray-700 ml-[4px] mr-[2px]'>
+             active:bg-[#237DC0] active:text-white text-[#2C2E74] ml-[4px] mr-[2px]'>
             <p className='hidden px-2 text-sm md:hidden lg:inline  
             cursor-pointer'>{link.name}</p>
           </Link>
@@ -50,20 +50,20 @@ function Header() {
       {/* Right */}
       <div className='flex space-x-1 items-center justify-end'>
         <div className='hover:bg-gray-100 transition duration-300 ease-out rounded-full p-3
-         active:bg-[#237DC0] active:text-white text-gray-700'>
+         active:bg-[#237DC0] active:text-white text-[#2C2E74]'>
             <p className='hidden px-2 text-sm md:hidden lg:inline  
             cursor-pointer' >Buy Online</p>
         </div>
         <div className='hover:bg-gray-100 transition duration-300 ease-out rounded-full p-3
-         active:bg-[#237DC0] text-gray-500 active:text-white'>
+         active:bg-[#237DC0] text-[#2C2E74] active:text-white'>
         <GlobeAltIcon className='h-5  cursor-pointer' />
         </div>
 
         <div className='flex items-center space-x-0.8 border p-0.5 rounded-full 
         hover:shadow-md cursor-pointer transition ease-out duration-300'>
-            <MenuIcon className='h-4 text-gray-900 mx-2 active:text-[#237DC0] transition 
+            <MenuIcon className='h-4 text-[#2C2E74] mx-2 active:text-[#237DC0] transition 
             ease-out duration-300' />
-            <UserCircleIcon className='h-10 text-gray-500 mx-0.5 active:text-[#237DC0] transition 
+            <UserCircleIcon className='h-10 text-[#2C2E74] mx-0.5 active:text-[#237DC0] transition 
             ease-out duration-300' />
         </div>
       </div>

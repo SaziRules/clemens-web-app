@@ -28,7 +28,7 @@ export default function Home() {
         <section className="pt-[7%]">
           <div>
             <div className="flex items-center justify-center pb-[5%]">
-              <Image src={productHeading} alt="" />
+              <Image src={productHeading} alt="heading" />
             </div>
             <ProductSlider />
             </div>     
@@ -42,7 +42,7 @@ export default function Home() {
 
         <section className="pt-[7%] pb-[7%]">
         <div className="flex items-center justify-center pb-[5%]">
-              <Image src={BlogHeading} alt="" />
+              <Image src={BlogHeading} alt="Heading" />
             </div>
           <Articles />
         </section>

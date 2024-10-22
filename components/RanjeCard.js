@@ -1,82 +1,52 @@
-import Image from 'next/image'
 import React from 'react'
-import ProRange from  '@/assets/pro.png'
-import consumeRange from '@/assets/consumer.png'
-import Buy from '@/assets/buy.png'
+import Image from 'next/image'
+import consumer from '@/assets/consumer.png'
+import pro from '@/assets/pro.png'
 import extras from '@/assets/extras.png'
+import buy from '@/assets/buy.png'
+import tips from '@/assets/tips.png'
 import tick from '@/assets/tick.png'
+
+const ranges = [
+  { src: consumer, title: 'Consumer Range', description: 'Comfort and protection for consumer incontinence.' },
+  { src: pro, title: 'Professional Range', description: 'Professional incontinence product range, your partner for over 18 years.' },
+  { src: extras, title: 'Accessories', description: 'The latest absorbency technology to keep you dry, day and night.' },
+  { src: buy, title: 'Where to buy', description: 'You can find Clemens™ products in-store at popular select retail stores.' },
+  { src: tips, title: 'Health Tips', description: 'practical advice, support, and resources to manage incontinence.' },
+  { src: pro, title: 'Knowlwdge Hub', description: 'Connect with others who understand and share your experiences.' },
+]
+
 
 function RanjeCard() {
   return (
-    <div className='flex space-x-3 overflow-scroll md:pl-5 scrollbar-hide'>
-    <div className='cursor-pointer hover:scale-105 transition transform duration-300 ease-out'>
-      <div className='relative h-[310px] w-[300px] items-center'>
-        <Image src={consumeRange} alt='Prodessional Range'
-        layout='fill' className=' rounded-3xl'  />
+    <div className='flex space-x-6 overflow-x-auto md:pl-5 scrollbar-hide py-4'>
+      {ranges.map((range, index) => (
+        <div key={index} className='cursor-pointer hover:scale-105 transition transform duration-300 ease-out flex-shrink-0 w-[300px]'>
+        <div className='relative h-[310px] w-[full] mb-4'>
+        <Image 
+              src={range.src} 
+              alt='Professional Range'
+              fill 
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className='rounded-3xl'
+              style={{ objectFit: 'cover' }}
+            />
+        </div>
+        <h3 className='text-[#2C2E74] text-[24px] font-normal'>{range.title}</h3>
+        <p className='text-[#2C2E74] text-[14px] font-thin w-[295px] leading-5'>{range.description}</p>
+        <button>
+          <Image 
+          src={tick} 
+          alt='tick' 
+          width={56} 
+          height={56}
+          style={{ width: 'auto', height: 'auto' }} 
+          /></button>
       </div>
-      <h3 className='text-[#2C2E74] text-[24px] font-normal'>Consumer Range</h3>
-      <p className='text-[#2C2E74] text-[14px] font-thin w-[295px] leading-5'>Comfort and protection for consumer 
-incontinence.</p>
-<button><Image src={tick} alt='tick' width={56} /></button>
-        
-    </div>
-
-    <div className='cursor-pointer hover:scale-105 transition transform duration-300 ease-out'>
-      <div className='relative h-[310px] w-[300px] items-center'>
-        <Image src={ProRange} alt='Prodessional Range'
-        layout='fill' />
-      </div>
-      <h3 className='text-[#2C2E74] text-[24px] font-normal'>Professional Range</h3>
-      <p className='text-[#2C2E74] text-[14px] font-thin w-[295px] leading-5'>Professional incontinence product range 
-your partner for over 18 years.</p>
-<button><Image src={tick} alt='tick' width={56} /></button>
-    </div>
-
-    <div className='cursor-pointer hover:scale-105 transition transform duration-300 ease-out'>
-      <div className='relative h-[310px] w-[300px] items-center'>
-        <Image src={extras} alt='Prodessional Range'
-        layout='fill' />
-      </div>
-      <h3 className='text-[#2C2E74] text-[24px] font-normal'>Accessories</h3>
-      <p className='text-[#2C2E74] text-[14px] font-thin w-[295px] leading-5'>The latest absorbency technology to 
-keep you dry, day and night.</p>
-<button><Image src={tick} alt='tick' width={56} /></button>
-    </div>
-
-    <div className='cursor-pointer hover:scale-105 transition transform duration-300 ease-out'>
-      <div className='relative h-[310px] w-[300px] items-center'>
-        <Image src={Buy} alt='Prodessional Range'
-        layout='fill' />
-      </div>
-      <h3 className='text-[#2C2E74] text-[24px] font-normal'>Where to buy</h3>
-      <p className='text-[#2C2E74] text-[14px] font-thin w-[295px] leading-5'>You can find Clemens™ products in-store 
-at popular select retail stores.</p>
-<button><Image src={tick} alt='tick' width={56} /></button>
-    </div>
-
-    <div className='cursor-pointer hover:scale-105 transition transform duration-300 ease-out'>
-      <div className='relative h-[310px] w-[300px] items-center'>
-        <Image src={consumeRange} alt='Prodessional Range'
-        layout='fill' className=' rounded-3xl'  />
-      </div>
-      <h3 className='text-[#2C2E74] text-[24px] font-normal'>Consumer Range</h3>
-      <p className='text-[#2C2E74] text-[14px] font-thin w-[295px] leading-5'>Comfort and protection for consumer 
-incontinence.</p>
-<button><Image src={tick} alt='tick' width={56} /></button>
-    </div>
-
-    <div className='cursor-pointer hover:scale-105 transition transform duration-300 ease-out'>
-      <div className='relative h-[310px] w-[300px] items-center'>
-        <Image src={ProRange} alt='Prodessional Range'
-        layout='fill' />
-      </div>
-      <h3 className='text-[#2C2E74] text-[24px] font-normal'>Professional Range</h3>
-      <p className='text-[#2C2E74] text-[14px] font-thin w-[295px] leading-5'>Professional incontinence product range 
-your partner for over 18 years.</p>
-<button><Image src={tick} alt='tick' width={56} /></button>
-    </div>
+       
+      ))}
     </div>
   )
-}
+      }
 
-export default RanjeCard
+  export default RanjeCard
